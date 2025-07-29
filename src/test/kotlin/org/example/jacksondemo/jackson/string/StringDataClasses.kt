@@ -165,19 +165,19 @@ data class TestStringField55(val set_name: String = "")
 @ExpectedJson("""{"setter":""}""")
 data class TestStringField56(val setter: String = "")
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isActive":""}""")
 data class TestStringField57(val isActive: String = "")
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"is_active":""}""")
 data class TestStringField58(val is_active: String = "")
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isString":""}""")
 data class TestStringField59(val isString: String = "")
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isStringValue":""}""")
 data class TestStringField60(val isStringValue: String = "")
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"is_string":""}""")
 data class TestStringField61(val is_string: String = "")
 
 @ExpectedJson("""{"isstring":""}""")
@@ -189,7 +189,7 @@ data class TestStringField63(val get: String = "")
 @ExpectedJson("""{"set":""}""")
 data class TestStringField64(val set: String = "")
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"is_":""}""")
 data class TestStringField65(val is_: String = "")
 
 @ExpectedJson("""{"default":""}""")
@@ -241,7 +241,7 @@ data class TestStringField80(val getValue: String = "")
 @ExpectedJson("""{"setDefault":""}""")
 data class TestStringField81(val setDefault: String = "")
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isType":""}""")
 data class TestStringField82(val isType: String = "")
 
 @ExpectedJson("""{"get_data":""}""")
@@ -250,5 +250,5 @@ data class TestStringField83(val get_data: String = "")
 @ExpectedJson("""{"set_data":""}""")
 data class TestStringField84(val set_data: String = "")
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"is_data":""}""")
 data class TestStringField85(val is_data: String = "")

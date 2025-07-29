@@ -126,32 +126,32 @@ data class TestBigDecimalField41(val сумма: BigDecimal = BigDecimal.ZERO)
 @ExpectedJson("""{"bigDecimal_1_value":0}""")
 data class TestBigDecimalField42(val bigDecimal_1_value: BigDecimal = BigDecimal.ZERO)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isAmount":0}""")
 data class TestBigDecimalField43(val isAmount: BigDecimal = BigDecimal.ZERO)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"is_amount":0}""")
 data class TestBigDecimalField44(val is_amount: BigDecimal = BigDecimal.ZERO)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isBigDecimal":0}""")
 data class TestBigDecimalField45(val isBigDecimal: BigDecimal = BigDecimal.ZERO)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"is_big_decimal":0}""")
 data class TestBigDecimalField46(val is_big_decimal: BigDecimal = BigDecimal.ZERO)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isAmountTotal":0}""")
 data class TestBigDecimalField47(val isAmountTotal: BigDecimal = BigDecimal.ZERO)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isTotal42":0}""")
 data class TestBigDecimalField48(val isTotal42: BigDecimal = BigDecimal.ZERO)
 
 // nullable fields (BigDecimal?)
 @ExpectedJson("""{"nullableAmount":null}""")
 data class TestBigDecimalField49(val nullableAmount: BigDecimal? = null)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isNullable":null}""")
 data class TestBigDecimalField50(val isNullable: BigDecimal? = null)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"is_nullable":null}""")
 data class TestBigDecimalField51(val is_nullable: BigDecimal? = null)
 
 @ExpectedJson("""{"nullable_is_amount":null}""")
@@ -160,7 +160,7 @@ data class TestBigDecimalField52(val nullable_is_amount: BigDecimal? = null)
 @ExpectedJson("""{"nullableIsAmount":null}""")
 data class TestBigDecimalField53(val nullableIsAmount: BigDecimal? = null)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isGetAmount":null}""")
 data class TestBigDecimalField54(val isGetAmount: BigDecimal? = null)
 
 @ExpectedJson("""{"setIsAmount":null}""")
@@ -169,7 +169,7 @@ data class TestBigDecimalField55(val setIsAmount: BigDecimal? = null)
 @ExpectedJson("""{"getIsAmount":null}""")
 data class TestBigDecimalField56(val getIsAmount: BigDecimal? = null)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isSetGetAmount":null}""")
 data class TestBigDecimalField57(val isSetGetAmount: BigDecimal? = null)
 
 @ExpectedJson("""{"amountNullable":null}""")
