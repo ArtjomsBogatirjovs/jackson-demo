@@ -18,7 +18,7 @@ data class TestLocalDateTimeField3(val getIssueDate: LocalDateTime = LocalDateTi
 @ExpectedJson("""{"setIssueDate":"2000-01-01T00:00:00"}""")
 data class TestLocalDateTimeField4(val setIssueDate: LocalDateTime = LocalDateTime.parse("2000-01-01T00:00:00"))
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isIssueDate":"2000-01-01T00:00:00"}""")
 data class TestLocalDateTimeField5(val isIssueDate: LocalDateTime = LocalDateTime.parse("2000-01-01T00:00:00"))
 
 @ExpectedJson("""{"issuedate":"2000-01-01T00:00:00"}""")
@@ -51,7 +51,7 @@ data class TestLocalDateTimeField14(val getSetIssueDate: LocalDateTime = LocalDa
 @ExpectedJson("""{"setGetIssueDate":"2000-01-01T00:00:00"}""")
 data class TestLocalDateTimeField15(val setGetIssueDate: LocalDateTime = LocalDateTime.parse("2000-01-01T00:00:00"))
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isGetIssueDate":"2000-01-01T00:00:00"}""")
 data class TestLocalDateTimeField16(val isGetIssueDate: LocalDateTime = LocalDateTime.parse("2000-01-01T00:00:00"))
 
 @ExpectedJson("""{"get_is_issue_date":"2000-01-01T00:00:00"}""")
@@ -66,7 +66,7 @@ data class TestLocalDateTimeField19(val dateTimeIssued: LocalDateTime = LocalDat
 @ExpectedJson("""{"issueDateNullable":null}""")
 data class TestLocalDateTimeField20(val issueDateNullable: LocalDateTime? = null)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"is_issue_date":null}""")
 data class TestLocalDateTimeField21(val is_issue_date: LocalDateTime? = null)
 
 @ExpectedJson("""{"get_issue_date":null}""")
@@ -100,7 +100,7 @@ data class TestLocalDateField3(val getIssueDate: LocalDate = LocalDate.parse("20
 @ExpectedJson("""{"setIssueDate":"2000-01-01"}""")
 data class TestLocalDateField4(val setIssueDate: LocalDate = LocalDate.parse("2000-01-01"))
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isIssueDate":"2000-01-01"}""")
 data class TestLocalDateField5(val isIssueDate: LocalDate = LocalDate.parse("2000-01-01"))
 
 @ExpectedJson("""{"issuedate":"2000-01-01"}""")
@@ -133,7 +133,7 @@ data class TestLocalDateField14(val getSetIssueDate: LocalDate = LocalDate.parse
 @ExpectedJson("""{"setGetIssueDate":"2000-01-01"}""")
 data class TestLocalDateField15(val setGetIssueDate: LocalDate = LocalDate.parse("2000-01-01"))
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isGetIssueDate":"2000-01-01"}""")
 data class TestLocalDateField16(val isGetIssueDate: LocalDate = LocalDate.parse("2000-01-01"))
 
 @ExpectedJson("""{"get_is_issue_date":"2000-01-01"}""")
@@ -148,7 +148,7 @@ data class TestLocalDateField19(val dateTimeIssued: LocalDate = LocalDate.parse(
 @ExpectedJson("""{"issueDateNullable":null}""")
 data class TestLocalDateField20(val issueDateNullable: LocalDate? = null)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"is_issue_date":null}""")
 data class TestLocalDateField21(val is_issue_date: LocalDate? = null)
 
 @ExpectedJson("""{"get_issue_date":null}""")

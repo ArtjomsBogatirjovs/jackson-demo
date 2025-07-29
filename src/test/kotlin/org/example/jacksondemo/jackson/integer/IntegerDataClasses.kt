@@ -5,7 +5,7 @@ import org.example.jacksondemo.jackson.ExpectedJson
 @ExpectedJson("""{"number":0}""")
 data class TestIntegerField1(val number: Int = 0)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"isNumber":0}""")
 data class TestIntegerField2(val isNumber: Int = 0)
 
 @ExpectedJson("""{"inNumber":0}""")
@@ -32,7 +32,7 @@ data class TestIntegerField9(val nUMber: Int = 0)
 @ExpectedJson("""{"number":0}""")
 data class TestIntegerField10(val NUMBER: Int = 0)
 
-@ExpectedJson("""{}""")
+@ExpectedJson("""{"is_number":0}""")
 data class TestIntegerField11(val is_number: Int = 0)
 
 @ExpectedJson("""{"_number":0}""")

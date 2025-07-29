@@ -8,13 +8,13 @@ data class TestBooleanField1(val isTrue: Boolean = false)
 @ExpectedJson("""{"isfalse":false}""")
 data class TestBooleanField2(val isfalse: Boolean = false)
 
-@ExpectedJson("""{"xxa":false}""")
+@ExpectedJson("""{"isXXa":false}""")
 data class TestBooleanField3(val isXXa: Boolean = false)
 
-@ExpectedJson("""{"xx":false}""")
+@ExpectedJson("""{"isXX":false}""")
 data class TestBooleanField4(val isXX: Boolean = false)
 
-@ExpectedJson("""{"xxaX":false}""")
+@ExpectedJson("""{"isXXaX":false}""")
 data class TestBooleanField5(val isXXaX: Boolean = false)
 
 @ExpectedJson("""{"is_XXaX":false}""")
@@ -62,13 +62,13 @@ data class TestBooleanField20(val is_true: Boolean = false)
 @ExpectedJson("""{"is_is_true":false}""")
 data class TestBooleanField21(val is_is_true: Boolean = false)
 
-@ExpectedJson("""{"html":false}""")
+@ExpectedJson("""{"isHTML":false}""")
 data class TestBooleanField22(val isHTML: Boolean = false)
 
 @ExpectedJson("""{"html":false}""")
 data class TestBooleanField23(val HTML: Boolean = false)
 
-@ExpectedJson("""{"xml":false}""")
+@ExpectedJson("""{"isXML":false}""")
 data class TestBooleanField24(val isXML: Boolean = false)
 
 @ExpectedJson("""{"xml":false}""")

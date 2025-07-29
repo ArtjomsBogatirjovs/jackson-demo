@@ -27,7 +27,7 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testImplementation("org.reflections:reflections:0.10.2")
 
-    val jacksonVersion = "2.14.2"
+    val jacksonVersion = "2.19.2"
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:${jacksonVersion}")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${jacksonVersion}")
     implementation("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
