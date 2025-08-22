@@ -145,3 +145,8 @@ data class TestBooleanField48(val setIsTrue: Boolean = false)
 
 @ExpectedJson("""{"getIs_set":false}""")
 data class TestBooleanField49(val getIs_set: Boolean = false)
+
+@ExpectedJson("""{"a":false,"isValid":false}""")
+data class TestBooleanField50(val a: Boolean = false) {
+    val isValid: Boolean get() = a
+}

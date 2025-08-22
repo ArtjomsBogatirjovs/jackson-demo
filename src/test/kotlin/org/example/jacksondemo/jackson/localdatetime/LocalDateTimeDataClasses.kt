@@ -1,10 +1,10 @@
 package org.example.jacksondemo.jackson.localdatetime
 
 
-import java.time.LocalDateTime
 import com.fasterxml.jackson.annotation.JsonProperty
 import org.example.jacksondemo.jackson.ExpectedJson
 import java.time.LocalDate
+import java.time.LocalDateTime
 
 @ExpectedJson("""{"issueDate":"2000-01-01T00:00:00"}""")
 data class TestLocalDateTimeField1(val issueDate: LocalDateTime = LocalDateTime.parse("2000-01-01T00:00:00"))

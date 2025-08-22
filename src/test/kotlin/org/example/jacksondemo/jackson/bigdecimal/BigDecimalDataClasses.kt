@@ -1,7 +1,7 @@
 package org.example.jacksondemo.jackson.bigdecimal
 
-import java.math.BigDecimal
 import org.example.jacksondemo.jackson.ExpectedJson
+import java.math.BigDecimal
 
 @ExpectedJson("""{"amount":0}""")
 data class TestBigDecimalField1(val amount: BigDecimal = BigDecimal.ZERO)
